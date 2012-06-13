@@ -1,0 +1,56 @@
+.toggle-box, .toggle-box * {
+    cursor: pointer;
+}
+
+.toggle-box {
+    position: relative;
+    width: 60px;
+    height: 25px;
+    background: -moz-linear-gradient(top, #499bea 0%, #207ce5 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#499bea), color-stop(100%,#207ce5)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #499bea 0%,#207ce5 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #499bea 0%,#207ce5 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #499bea 0%,#207ce5 100%); /* IE10+ */
+    background: linear-gradient(top, #499bea 0%,#207ce5 100%); /* W3C */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 3, 0.4);
+}
+
+.toggle-label {
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    display:;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.toggle-control {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 30px;
+    height: 25px;
+    margin: 0;
+    background: -moz-linear-gradient(top, #cccccc 0%, #eeeeee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cccccc), color-stop(100%,#eeeeee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ccccc  0%,#ceeeeee100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ccccc  0%,#ceeeeee100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ccccc  0%,#ceeeeee100%); /* IE10+ */
+    background: linear-gradient(top, #ccccc  0%,#ceeeeee100%); /* W3C */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.4);
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.toggle-control:checked {
+    left: 30px;
+}
